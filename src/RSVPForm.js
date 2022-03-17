@@ -18,7 +18,7 @@ function RSVPForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Submitted:", formData);
+    console.log(formData.name, formData.age, formData.newMember, formData.comment);
     setFormData({ ...initialFormState });
   };
 
